@@ -1,0 +1,7 @@
+{
+  "name": "eDesk App",
+  "short_name": "eDesk",
+  "lang": "en-US",
+  "start_url": "https://and4yy.github.io/eDesk/",
+  "display": "standalone"
+}
