@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* Colors  */
+/* Fonts */
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+#menu {
+  background-color: #3E50B4;
+  height: 100px;
+  color: white;
+}

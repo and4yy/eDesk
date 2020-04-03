@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>E-Directory - eDesk</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="row valign-wrapper" id="menu">
+  <div class="col s6 m4 l4">
+    <ul id="dropdown" class="dropdown-content">
+      <li onclick='refresh()'><a>All Contacts</a></li>
+    </ul>
+  <a class="btn dropdown-button" href="#!" data-activates="dropdown">Groups<i class="mdi-navigation-arrow-drop-down right"></i></a>
+  </div>
+  <div class="col s4 m4 l4 center-align hide-on-small-only" id="contactGroupInfo">
+    <h5>All Contacts</h5>
+  </div>
+  <div class="col s6 m4 l4 right-align" id="AddNewButtonDiv">
+     <a class="btn-floating btn-large waves-effect waves-light red" onclick="addNew()"><i class="material-icons">add</i></a>
+  </div>
+</div>
+
+<div class="row valign-wrapper" id="search">
+  <div class="col s11 input-field" >
+    <input type="text" class="validate" onkeyup="search()" id="searchInput">
+    <label for="icon_prefix">search</label>
+  </div>
+   <div class="col s1">
+   </div>
+  
+</div>
+<div class="row">
+   <ul id="contactList" class="collection">
+   </ul>
+</div>
+  <div class="row">
+    <div class="col s12" id='addNewContact'>
+      <input type="text" placeholder="Full name" id="nameInput">
+      <input type="number" placeholder="Telephone" id="numberInput">
+      <input type="text" placeholder="Group" id="groupInput">
+     
+      <button class="btn waves-effect waves-light" type="submit" name="action" onclick="submitToDb()">Submit
+    <i class="material-icons right">send</i>
+  </button>
+    </div>
+</div>
+ <div class="row">
+    <div class="col s12" id='editContact'>
+
+ </div>
+</div>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-1.8.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
