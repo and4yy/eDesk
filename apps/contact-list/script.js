@@ -35,10 +35,10 @@ function submitToDb() {
   var person = new Person(nameInput.value, numberInput.value, groupInput.value);
   refresh();
 }
-var p1 = new Person("Jonathan Buell", 5804337551, "family");
-var p2 = new Person("Patrick Daniel", 8186934432, "work");
+var p1 = new Person("Anday", 9991611, "work");
+var p2 = new Person("Atoll Comander", 8186934432, "work");
 var p3 = new Person("Lorraine Winter", 3138211928, "work");
-var p4 = new Person("Constance Reed", 3138211928, "family");
+var p4 = new Person("Constance Reed", 3138211928, "Maldivian");
 var storedArray = JSON.parse(localStorage.getItem("array"));
 
 function loadLocalStorage() {
